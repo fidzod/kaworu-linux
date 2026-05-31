@@ -1,5 +1,5 @@
 {
-  description = "kaworu linux - a nixos rice";
+  description = "Kaworu Linux - A NixOS Rice";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -25,10 +25,10 @@
     system = "x86_64-linux";
   in
   {
-    nixosConfigurations.kaworu = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        ./hosts/kaworu/configuration.nix
+        ./hosts/vm/configuration.nix
         sysc-greet.nixosModules.default
         stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager

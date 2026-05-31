@@ -4,6 +4,9 @@
   imports =
     [
       ./hardware-configuration.nix
+      ../../modules/nixos/desktop.nix
+      ../../modules/nixos/audio.nix
+      ../../modules/nixos/graphics.nix
       ../../modules/nixos/stylix.nix
     ];
 
@@ -38,22 +41,6 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-
-  programs.hyprland.enable = true;
-
-  hardware.graphics.enable = true;
-  hardware.graphics.extraPackages = with pkgs; [ mesa ];
-
-  services.sysc-greet = {
-    enable = true;
-    compositor = "hyprland";
-  };
-
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    pulse.enable = true;
-  };
 
   environment.systemPackages = with pkgs; [
     curl
