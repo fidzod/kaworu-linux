@@ -8,9 +8,14 @@
     ./modules/home/hyprland
     ./modules/home/neovim
     ./modules/home/foot.nix
+    ./modules/home/bash.nix
   ];
 
-  home.enableNixpkgsReleaseCheck = false;
+  home.packages = with pkgs; [
+    librewolf
+  ];
+
   home.stateVersion = "26.05";
+  home.enableNixpkgsReleaseCheck = false;
   programs.home-manager.enable = true;
 }
