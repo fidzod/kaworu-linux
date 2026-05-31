@@ -7,6 +7,6 @@
 
     plugins = with pkgs.vimPlugins; [];
 
-    extraLuaConfig = builtins.readFile ./lua/options.lua;
+    initLua = builtins.readFile ./lua/options.lua;
   };
 }

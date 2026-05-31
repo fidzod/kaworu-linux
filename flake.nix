@@ -13,9 +13,14 @@
       url = "github:Nomadcxx/sysc-greet";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, sysc-greet, ... }:
+  outputs = { self, nixpkgs, home-manager, sysc-greet, stylix, ... }:
   let
     system = "x86_64-linux";
   in
@@ -24,7 +29,8 @@
       inherit system;
       modules = [
         ./hosts/kaworu/configuration.nix
-	sysc-greet.nixosModules.default
+        sysc-greet.nixosModules.default
+        stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;

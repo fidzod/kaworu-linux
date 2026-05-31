@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ../../modules/nixos/stylix.nix
     ];
 
   boot.loader.grub.enable = true;
@@ -59,8 +60,6 @@
     git
     wget
   ];
-
-  home-manager.enableNixpkgsReleaseCheck = false;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
