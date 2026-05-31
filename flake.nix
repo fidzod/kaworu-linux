@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -23,7 +23,7 @@
     nixosConfigurations.kaworu = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        ./configuration.nix
+        ./hosts/kaworu/configuration.nix
 	sysc-greet.nixosModules.default
         home-manager.nixosModules.home-manager
         {
