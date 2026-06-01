@@ -6,6 +6,11 @@ hl.monitor({
 })
 
 local terminal = "foot"
+local bar = "waybar"
+
+hl.on("hyprland.start", function ()
+  hl.exec_cmd(bar)
+end)
 
 hl.config({
   general = {
@@ -51,10 +56,9 @@ hl.bind(mod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mod .. " + J", hl.dsp.focus({ direction = "down" }))
 
-for i = 1, 10 do
-    local key = i % 10 -- 10 maps to key 0
-    hl.bind(mod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
-    hl.bind(mod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
+for i = 1, 6 do
+    hl.bind(mod .. " + " .. key, hl.dsp.focus({ workspace = i}))
+    hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })

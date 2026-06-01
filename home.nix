@@ -6,10 +6,13 @@
 
   imports = [
     ./modules/home/hyprland
+    ./modules/home/waybar
     ./modules/home/neovim
     ./modules/home/foot.nix
     ./modules/home/bash.nix
   ];
+
+  stylix.targets.waybar.enable = false;
 
   home.packages = with pkgs; [
     librewolf
