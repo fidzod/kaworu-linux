@@ -2,14 +2,13 @@
 
 # Backlog
 
-- (#16) Add padding to foot
+- (#13) Add fastfetch (See: fastfetch examples/27)
+- (#07) Add eza, ccat and autojump
+- (#14) Add a file browser (Dolphin?)
 - (#15) Migrate from sysc-greeter to hyprlogin
     - sysc-greeter lacks customisability and can't
     - be configured declaritively
 - (#10) Rice greeter (Depends on #15 now)
-- (#13) Add fastfetch (See: fastfetch examples/27)
-- (#14) Add a file browser (Dolphin?)
-- (#07) Add eza, ccat and autojump
 - (#09) Bash ricing?
     - Worth thinking about, although there is a big
     - tradeoff here in order to avoid oh-my-bash bloat
@@ -23,11 +22,6 @@
 
 # In-progress
 
-- (#05) Configure Hyprland
-    - [x] 0.01: Basic config
-    - [x] 0.02: Keyboard layout
-    - [ ] 0.03: Window borders
-        - Add a nice gradient border based on Stylix colors
 - (#02) Add README.md
     - [x] 0.01: Header
     - [ ] 0.02: Section on project structure
@@ -37,6 +31,8 @@
 
 # Complete
 
+- (#16) Add padding to foot
+- (#05) Configure Hyprland
 - (#18) Launcher: Wofi
 - (#11!) Bar
 - (#04) Install on Thinkpad

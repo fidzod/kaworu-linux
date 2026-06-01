@@ -7,7 +7,7 @@ hl.monitor({
 
 local terminal = "foot"
 local bar = "waybar"
-local launcher = "wofi --show drun --width 600"
+local launcher = "wofi --show drun --width 600 --height 300"
 
 hl.on("hyprland.start", function ()
   hl.exec_cmd(bar)
