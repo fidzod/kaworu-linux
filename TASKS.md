@@ -1,9 +1,8 @@
 # Kaworu Linux
 
 # Backlog
-- (#04) Install on Thinkpad
 - (#13) Add fastfetch (See: examples/27)
-- (#05) Configure Hyprland
+- (#14) Add a file browser
 - (#06) Configure Neovim
 - (#07) Add eza and ccat
 - (#11) Waybar
@@ -16,6 +15,10 @@
 - (#12) Migrate from waybar to custom AGS shell
 
 # In-progress
+- (#05) Configure Hyprland
+    - [x] 0.01: Basic config
+    - [x] 0.02: Keyboard layout
+    - [ ] 0.03: Window borders
 - (#02) Add README.md
     - [x] 0.01: Header
     - [ ] 0.02: Section on project structure
@@ -24,5 +27,6 @@
     - [ ] 0.05: Credits
 
 # Complete
+- (#04) Install on Thinkpad
 - (#03) Create TASKS.md
 - (#01) Base config and project structure

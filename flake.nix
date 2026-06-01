@@ -25,6 +25,20 @@
     system = "x86_64-linux";
   in
   {
+    nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
+      inherit system;
+      modules = [
+        ./hosts/thinkpad/configuration.nix
+        sysc-greet.nixosModules.default
+        stylix.nixosModules.stylix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.fidzod = import ./home.nix;
+        }
+      ];
+    };
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [

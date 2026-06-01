@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  hardware.graphics.enable = true;
-  hardware.graphics.extraPackages = with pkgs; [ mesa ];
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-driver
+      intel-compute-runtime
+    ];
+  };
 }
