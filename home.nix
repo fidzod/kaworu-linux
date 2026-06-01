@@ -16,6 +16,7 @@
 
   home.packages = with pkgs; [
     librewolf
+    wofi
   ];
 
   home.stateVersion = "26.05";

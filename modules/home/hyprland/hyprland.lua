@@ -7,6 +7,7 @@ hl.monitor({
 
 local terminal = "foot"
 local bar = "waybar"
+local launcher = "wofi --show drun --width 600"
 
 hl.on("hyprland.start", function ()
   hl.exec_cmd(bar)
@@ -45,8 +46,10 @@ hl.config({
 })
 
 local mod = "SUPER"
+local ctrl = "CTRL"
 
 hl.bind(mod .. " + Return", hl.dsp.exec_cmd(terminal))
+hl.bind(ctrl .. " + SPACE ", hl.dsp.exec_cmd(launcher))
 hl.bind(mod .. " + Q", hl.dsp.window.close())
 hl.bind(mod .. " + C", hl.dsp.exit())
 hl.bind(mod .. " + F", hl.dsp.window.float({ action = "toggle" }))
@@ -56,9 +59,30 @@ hl.bind(mod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mod .. " + J", hl.dsp.focus({ direction = "down" }))
 
+hl.bind(
+  mod .. " + SHIFT + H",
+  hl.dsp.window.resize({ x = -10, y = 0, relative = true}),
+  { repeating = true }
+)
+hl.bind(
+  mod .. " + SHIFT + L",
+  hl.dsp.window.resize({ x = 10,  y = 0, relative = true}),
+  { repeating = true }
+)
+hl.bind(
+  mod .. " + SHIFT + K",
+  hl.dsp.window.resize({ x =  0,  y = 10, relative = true}),
+  { repeating = true }
+)
+hl.bind(
+  mod .. " + SHIFT + J",
+  hl.dsp.window.resize({ x =  0,  y = -10, relative = true}),
+  { repeating = true }
+)
+
 for i = 1, 6 do
-    hl.bind(mod .. " + " .. key, hl.dsp.focus({ workspace = i}))
-    hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+    hl.bind(mod .. " + " .. i, hl.dsp.focus({ workspace = i}))
+    hl.bind(mod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
 end
 
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })

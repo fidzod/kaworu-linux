@@ -2,7 +2,6 @@
 
 # Backlog
 
-- (#18) Launcher/menu (Wofi?)
 - (#16) Add padding to foot
 - (#15) Migrate from sysc-greeter to hyprlogin
     - sysc-greeter lacks customisability and can't
@@ -38,6 +37,7 @@
 
 # Complete
 
+- (#18) Launcher: Wofi
 - (#11!) Bar
 - (#04) Install on Thinkpad
 - (#03) Create TASKS.md
