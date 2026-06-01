@@ -2,7 +2,6 @@
 
 # Backlog
 
-- (#13) Add fastfetch (See: fastfetch examples/27)
 - (#07) Add eza, ccat and autojump
 - (#14) Add a file browser (Dolphin?)
 - (#15) Migrate from sysc-greeter to hyprlogin
@@ -31,6 +30,7 @@
 
 # Complete
 
+- (#13) Add fastfetch
 - (#16) Add padding to foot
 - (#05) Configure Hyprland
 - (#18) Launcher: Wofi

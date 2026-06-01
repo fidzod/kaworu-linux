@@ -10,6 +10,8 @@
     ./modules/home/neovim
     ./modules/home/foot.nix
     ./modules/home/bash.nix
+    ./modules/home/btop.nix
+    ./modules/home/fastfetch.nix
   ];
 
   stylix.targets.waybar.enable = false;

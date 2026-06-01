@@ -52,7 +52,7 @@ hl.bind(mod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(ctrl .. " + SPACE ", hl.dsp.exec_cmd(launcher))
 hl.bind(mod .. " + Q", hl.dsp.window.close())
 hl.bind(mod .. " + C", hl.dsp.exit())
-hl.bind(mod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
 
 hl.bind(mod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mod .. " + L", hl.dsp.focus({ direction = "right" }))
