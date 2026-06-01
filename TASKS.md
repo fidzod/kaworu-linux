@@ -2,8 +2,6 @@
 
 # Backlog
 
-- (#07) Add eza, ccat and autojump
-- (#14) Add a file browser (Dolphin?)
 - (#15) Migrate from sysc-greeter to hyprlogin
     - sysc-greeter lacks customisability and can't
     - be configured declaritively
@@ -30,6 +28,8 @@
 
 # Complete
 
+- (#07) Add eza, bat, and autojump
+- (#14) Add a file browser: yazi
 - (#13) Add fastfetch
 - (#16) Add padding to foot
 - (#05) Configure Hyprland

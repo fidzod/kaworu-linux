@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;
-    image = ../../wallpapers/evangelion-dark-purple.jpg;
+    image = ../../wallpapers/wallpaper.jpg;
     polarity = "dark";
     autoEnable = true;
     enableReleaseChecks = false;

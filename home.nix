@@ -12,12 +12,16 @@
     ./modules/home/bash.nix
     ./modules/home/btop.nix
     ./modules/home/fastfetch.nix
+    ./modules/home/yazi.nix
+    ./modules/home/eza.nix
   ];
 
   stylix.targets.waybar.enable = false;
 
   home.packages = with pkgs; [
     wofi
+    bat
+    autojump
     librewolf
   ];
 

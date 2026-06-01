@@ -7,6 +7,8 @@
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#vm";
       vi = "nvim";
+      ls = "eza -1";
+      cat = "bat -pp";
     };
 
     initExtra = ''
