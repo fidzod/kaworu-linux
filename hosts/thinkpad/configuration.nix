@@ -37,6 +37,10 @@
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "video" "input" ];
     shell = pkgs.bash;
+    packages = with pkgs;
+      [
+        obsidian
+      ];
   };
 
   nixpkgs.config.allowUnfree = true;

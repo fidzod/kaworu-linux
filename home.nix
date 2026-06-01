@@ -17,8 +17,8 @@
   stylix.targets.waybar.enable = false;
 
   home.packages = with pkgs; [
-    librewolf
     wofi
+    librewolf
   ];
 
   home.stateVersion = "26.05";
