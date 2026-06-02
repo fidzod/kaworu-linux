@@ -22,29 +22,29 @@
           {
             type = "kernel";
             key = "kernel";
-            keyColor = "green";
+            keyColor = "red";
           }
           {
             type = "host";
             format = "{vendor} {family}";
             key = "host  ";
-            keyColor = "yellow";
+            keyColor = "red";
           }
           {
             type = "packages";
             key = "pkgs  ";
-            keyColor = "blue";
+            keyColor = "red";
           }
           {
             type = "uptime";
             format = "{?days}{days}d {?}{hours}h {minutes}m";
             key = "uptime";
-            keyColor = "magenta";
+            keyColor = "red";
           }
           {
             type = "memory";
             key = "memory";
-            keyColor = "cyan";
+            keyColor = "red";
           }
           "break"
         ];

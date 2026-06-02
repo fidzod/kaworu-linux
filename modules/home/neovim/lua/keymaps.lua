@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 local map = function(mode, lhs, rhs, opts)
     opts = opts or { noremap = true, silent = true }
     vim.keymap.set(mode, lhs, rhs, opts)
@@ -31,7 +34,3 @@ map("v", "<C-Up>", ":m '<-2<CR>gv")
 
 -- nvim-tree
 vim.keymap.set("n", "<C-e>", ":NvimTreeToggle<CR>")
-
--- leader key
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "

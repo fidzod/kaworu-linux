@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   programs.bash = {
@@ -11,13 +11,58 @@
       cat = "bat -pp";
     };
 
-    initExtra = ''
-      fastfetch
-    '';
+    initExtra = "fastfetch";
   };
 
-  programs.oh-my-posh = {
+  programs.starship = {
     enable = true;
-    useTheme = "tokyo";
+    add_newline = false;
+    settings = {
+      format = lib.concatStrings
+        [
+          "$username"
+          "$hostname"
+          "$directory"
+          "$git_branch"
+          "$\{custom.git_dirty}"
+          "$character"
+        ];
+
+      username = {
+        format = "[$user @]($style) ";
+        style_user = "red";
+        show_always = true;
+      };
+      
+      hostname = {
+        format = "[$hostname in]($style) ";
+        style = "red";
+        ssh_only = false;
+      };
+      
+      directory = {
+        style = "green";
+      };
+      
+      git_branch = {
+        format = "[$symbol $branch]($style) ";
+        symbol = "";
+        style = "green";
+      };
+      
+      git_status.disabled = true;
+      
+      custom.git_dirty = {
+        command = ''git diff-index --quiet HEAD -- 2>/dev/null && echo "✓" || echo "✗"'';
+        when = "git rev-parse --is-inside-work-tree 2>/dev/null";
+        format = "[$output]($style) ";
+        style = "green";
+      };
+      
+      character = {
+        success_symbol = "[\\$](white)";
+        error_symbol = "[\\$](red)";
+      };
+    };
   };
 }

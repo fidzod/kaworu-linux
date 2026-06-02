@@ -16,6 +16,7 @@
       nvim-notify
       nvim-autopairs
       lualine-nvim
+      nvim-web-devicons
     ];
 
     initLua = builtins.readFile ./init.lua;
