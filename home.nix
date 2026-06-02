@@ -21,6 +21,8 @@
   home.packages = with pkgs; [
     wofi
     bat
+    fzf
+    ripgrep
     librewolf
   ];
 

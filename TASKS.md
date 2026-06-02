@@ -4,7 +4,6 @@
 
 - (#15) Migrate from sysc-greeter to hyprlogin
 - (#10) Rice greeter (Depends on #15)
-- (#06) Configure Neovim
 - (#17) MPD, RMPC, Currently Playing in Bar
 - (#19) Bluetooth
 - (#08) Add Plymouth
@@ -15,6 +14,9 @@
 
 # In-progress
 
+- (#06) Configure Neovim
+    - [x] Basic configuration
+    - [ ] Lsp/Treesitter etc.
 - (#02) Add README.md
     - [x] 0.01: Header
     - [ ] 0.02: Section on project structure
