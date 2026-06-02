@@ -54,6 +54,9 @@ hl.bind(mod .. " + Q", hl.dsp.window.close())
 hl.bind(mod .. " + C", hl.dsp.exit())
 hl.bind(mod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
 
+hl.bind("Print", hl.dsp.exec_cmd("screenshot"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("screenshot-region"))
+
 hl.bind(mod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mod .. " + K", hl.dsp.focus({ direction = "up" }))

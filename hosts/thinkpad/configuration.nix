@@ -41,6 +41,7 @@
       [
         obsidian
         python3
+        bun
       ];
   };
 

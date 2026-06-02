@@ -2,15 +2,12 @@
 
 # Backlog
 
-- (#15) Migrate from sysc-greeter to hyprlogin
-- (#10) Rice greeter (Depends on #15)
+- (#15) Migrate from sysc-greeter to Hyprlogin
 - (#17) MPD, RMPC, Currently Playing in Bar
 - (#19) Bluetooth
 - (#08) Add Plymouth
-    - Branding lives here (as well as greeter, see #10)
-- (#12) Migrate from waybar to a shell (AGS?)
-    - This would likely replace (#11) and (#18)
-- (#20) Fix: Charging icon size (Waybar)
+    - Branding lives here (as well as greeter, see ~~#10~~ #15)
+- (#22) Volume control
 
 # In-progress
 
@@ -36,3 +33,13 @@
 - (#04) Install on Thinkpad
 - (#03) Create TASKS.md
 - (#01) Base config and project structure
+
+# Archived
+
+- (#10) Rice greeter (Depends on #15)
+    - Reason for Archiving: Merged into (#15)
+- (#12) Migrate from waybar to a shell (AGS?)
+    - Reason for Archiving: Might be interesting in the future
+    but focusing on Waybar for now
+- (#20) Fix: Charging icon size (Waybar)
+    - Reason for Archiving: Currently unable to fix

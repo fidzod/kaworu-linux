@@ -8,6 +8,7 @@
     ./modules/home/hyprland
     ./modules/home/waybar
     ./modules/home/neovim
+    ./modules/home/scripts
     ./modules/home/foot.nix
     ./modules/home/bash.nix
     ./modules/home/btop.nix
