@@ -15,7 +15,7 @@
     - [x] 0.01: Header
     - [ ] 0.02: Section on project structure
     - [ ] 0.03: Installation instructions
-    - [ ] 0.04: Demo image
+    - [x] 0.04: Demo image
     - [ ] 0.05: Credits
 
 # Complete

@@ -1,5 +1,5 @@
 <h1 align=center>
-  <img src="assets/kaworu.jpg" style="width: 100px;">
+  <img src="images/kaworu.jpg" style="width: 100px;">
   <br>
   Kaworu Linux
   <br>
@@ -25,3 +25,7 @@
   A clean, minimal NixOS rice with flakes. Built around Hyprland, Stylix,
   and Home Manager.
 </p>
+
+<br>
+
+<img src="images/demo.png" alt="Desktop Screenshot"/>
