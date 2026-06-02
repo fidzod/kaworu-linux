@@ -21,9 +21,10 @@
   home.packages = with pkgs; [
     wofi
     bat
-    autojump
     librewolf
   ];
+
+  programs.autojump.enable = true;
 
   home.stateVersion = "26.05";
   home.enableNixpkgsReleaseCheck = false;

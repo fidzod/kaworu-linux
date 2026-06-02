@@ -3,19 +3,15 @@
 # Backlog
 
 - (#15) Migrate from sysc-greeter to hyprlogin
-    - sysc-greeter lacks customisability and can't
-    - be configured declaritively
-- (#10) Rice greeter (Depends on #15 now)
-- (#09) Bash ricing?
-    - Worth thinking about, although there is a big
-    - tradeoff here in order to avoid oh-my-bash bloat
+- (#10) Rice greeter (Depends on #15)
 - (#06) Configure Neovim
 - (#17) MPD, RMPC, Currently Playing in Bar
+- (#19) Bluetooth
 - (#08) Add Plymouth
     - Branding lives here (as well as greeter, see #10)
 - (#12) Migrate from waybar to a shell (AGS?)
     - This would likely replace (#11) and (#18)
-- (#19) Bluetooth
+- (#20) Fix: Charging icon size (Waybar)
 
 # In-progress
 
@@ -28,6 +24,8 @@
 
 # Complete
 
+- (#21) Fix: Autojump
+- (#09) Rice Bash prompt
 - (#07) Add eza, bat, and autojump
 - (#14) Add a file browser: yazi
 - (#13) Add fastfetch
