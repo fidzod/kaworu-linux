@@ -16,8 +16,9 @@
 
   programs.starship = {
     enable = true;
-    add_newline = false;
     settings = {
+      add_newline = false;
+
       format = lib.concatStrings
         [
           "$username"

@@ -14,9 +14,6 @@
 
 # In-progress
 
-- (#06) Configure Neovim
-    - [x] Basic configuration
-    - [ ] Lsp/Treesitter etc.
 - (#02) Add README.md
     - [x] 0.01: Header
     - [ ] 0.02: Section on project structure
@@ -26,6 +23,7 @@
 
 # Complete
 
+- (#06) Configure Neovim
 - (#21) Fix: Autojump
 - (#09) Rice Bash prompt
 - (#07) Add eza, bat, and autojump

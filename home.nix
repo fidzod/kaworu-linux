@@ -24,6 +24,14 @@
     fzf
     ripgrep
     librewolf
+
+    # language servers:
+    svelte-language-server
+    typescript-language-server
+    vscode-langservers-extracted
+    pyright
+    marksman
+    nil
   ];
 
   programs.autojump.enable = true;
