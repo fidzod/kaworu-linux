@@ -11,7 +11,10 @@
       cat = "bat -pp";
     };
 
-    initExtra = "fastfetch";
+    initExtra = ''
+      fastfetch
+      zpdf() { zathura "$@" &>/dev/null & }
+    '';
   };
 
   programs.starship = {

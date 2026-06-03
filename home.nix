@@ -36,6 +36,7 @@
   ];
 
   programs.autojump.enable = true;
+  programs.zathura.enable = true;
 
   home.stateVersion = "26.05";
   home.enableNixpkgsReleaseCheck = false;

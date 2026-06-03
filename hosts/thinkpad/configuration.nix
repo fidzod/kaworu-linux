@@ -42,6 +42,8 @@
         obsidian
         python3
         bun
+        pandoc
+        tectonic
       ];
   };
 
