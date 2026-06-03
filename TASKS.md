@@ -7,7 +7,8 @@
 - (#19) Bluetooth
 - (#08) Add Plymouth
     - Branding lives here (as well as greeter, see ~~#10~~ #15)
-- (#22) Volume control
+- (#23) Power off
+- (#24) Cursor
 
 # In-progress
 
@@ -20,6 +21,7 @@
 
 # Complete
 
+- (#22) Volume control
 - (#06) Configure Neovim
 - (#21) Fix: Autojump
 - (#09) Rice Bash prompt
@@ -34,12 +36,8 @@
 - (#03) Create TASKS.md
 - (#01) Base config and project structure
 
-# Archived
+# Shelved
 
-- (#10) Rice greeter (Depends on #15)
-    - Reason for Archiving: Merged into (#15)
+- (#10) Rice greeter (-> #15)
 - (#12) Migrate from waybar to a shell (AGS?)
-    - Reason for Archiving: Might be interesting in the future
-    but focusing on Waybar for now
 - (#20) Fix: Charging icon size (Waybar)
-    - Reason for Archiving: Currently unable to fix

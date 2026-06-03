@@ -20,10 +20,11 @@ window#waybar {
   color: $base0B;
 }
 
-#network {
-  font-size: 18px;
-}
-
 #clock, #battery, #network {
   padding: 0 12px;
+}
+
+#network {
+  font-size: 18px;
+  padding: 0 12px 0 22px;
 }

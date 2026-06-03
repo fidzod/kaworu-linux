@@ -17,7 +17,7 @@ in
         layer = "top";
         position = "top";
         modules-left = [ "hyprland/workspaces" ];
-        modules-right = [ "network" "battery" "clock" ];
+        modules-right = [ "pulseaudio" "network" "battery" "clock" ];
 
         "hyprland/workspaces" = {
           format = "{id}";
@@ -28,6 +28,14 @@ in
             "4" = [];
             "5" = [];
             "6" = [];
+          };
+        };
+
+        "pulseaudio" = {
+          "format" = "{icon} {volume}%";
+          "format-icons" = {
+            "default" = ["" ""];
+            "default-muted" = "";
           };
         };
 
