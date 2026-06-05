@@ -35,7 +35,7 @@ in
 
       image = [
         {
-          path = toString ./ascii_art.png;
+          path = toString ./banner.png;
           size = "70";
           position = "0, 80";
           halign = "center";
@@ -53,11 +53,11 @@ in
         dots_size = 0.2;
         dots_spacing = 0.2;
         dots_center = true;
-        outer_color = "rgba(86, 90, 90, 0.88)";
-        inner_color = "rgba(40, 40, 40, 0.88)";
+        outer_color = "rgba(${colors.base06}00)";
+        inner_color = "rgba(${colors.base00}00)";
         font_color = "rgb(200, 200, 200)";
         fade_on_empty = false;
-        placeholder_text = ''<i><span foreground="##ffffff99"></span></i>'';
+        placeholder_text = ''<span foreground="##ffffff99">Password</span>'';
         font_family = fonts.monospace.name;
         hide_input = false;
         position = "0, -80";
@@ -86,6 +86,7 @@ in
           monitor = "";
           text = " $USER";
           font_family = fonts.monospace.name;
+          font_size = 10;
           color = "rgba(${colors.base05})";
           halign = "center";
           valign = "center";
