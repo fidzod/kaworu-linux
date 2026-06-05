@@ -3,8 +3,17 @@
 {
   programs.hyprland.enable = true;
 
-  services.sysc-greet = {
+  services.greetd = {
     enable = true;
-    compositor = "hyprland";
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
+        user = "greeter";
+      };
+      initial_session = {
+        command = "start-hyprland";
+        user = "fidzod";
+      };
+    };
   };
 }

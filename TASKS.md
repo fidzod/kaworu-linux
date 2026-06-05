@@ -2,6 +2,7 @@
 
 # Backlog
 
+- (#31) Translate Hyprland config into Nix
 - (#15) Migrate from sysc-greeter
 - (#19) Bluetooth
 - (#08) Plymouth

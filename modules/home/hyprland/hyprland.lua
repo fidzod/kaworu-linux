@@ -10,6 +10,7 @@ local bar = "waybar"
 local launcher = "wofi --show drun --width 600 --height 300"
 
 hl.on("hyprland.start", function ()
+  hl.exec_cmd("hyprlock || hyprctl dispatch exit")
   hl.exec_cmd(bar)
   hl.exec_cmd("hyprctl setcursor macOS-White 26")
 end)
