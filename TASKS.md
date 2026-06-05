@@ -10,7 +10,7 @@
 - (#25) Hypridle
 - (#26) Fix Neovim:
     - Pyright broken, lsp format, lsp rename,
-    - Stop using system clipboard
+    - Stop using system clipboard, pandoc too eager
 - (#27) Configure wofi
 - (#29) Stylix version warning
 
@@ -25,6 +25,7 @@
 
 # Complete
 
+- (#30) Xwayland
 - (#24) Cursor
 - (#17) MPD, RMPC, Waybar module
 - (#28) Hyprlock
