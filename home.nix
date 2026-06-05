@@ -22,6 +22,7 @@
   # stylix.targets.hyprlock.enable = false;
 
   home.packages = with pkgs; [
+    apple-cursor
     wofi
     bat
     fzf

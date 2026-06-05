@@ -2,7 +2,6 @@
 
 # Backlog
 
-- (#24) Cursor
 - (#15) Migrate from sysc-greeter
 - (#19) Bluetooth
 - (#08) Plymouth
@@ -13,6 +12,7 @@
     - Pyright broken, lsp format, lsp rename,
     - Stop using system clipboard
 - (#27) Configure wofi
+- (#29) Stylix version warning
 
 # In-progress
 
@@ -25,6 +25,7 @@
 
 # Complete
 
+- (#24) Cursor
 - (#17) MPD, RMPC, Waybar module
 - (#28) Hyprlock
 - (#22) Volume control
