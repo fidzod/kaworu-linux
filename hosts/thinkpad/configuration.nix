@@ -8,6 +8,7 @@
       ../../modules/nixos/audio.nix
       ../../modules/nixos/graphics.nix
       ../../modules/nixos/stylix.nix
+      ../../modules/nixos/plymouth.nix
     ];
 
   boot.loader.systemd-boot.enable = true;

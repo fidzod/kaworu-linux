@@ -3,10 +3,7 @@
 # Backlog
 
 - (#31) Translate Hyprland config into Nix
-- (#15) Migrate from sysc-greeter
 - (#19) Bluetooth
-- (#08) Plymouth
-    - Branding lives here (as well as greeter, see ~~#10~~ #15)
 - (#23) Power off
 - (#25) Hypridle
 - (#26) Fix Neovim:
@@ -26,6 +23,8 @@
 
 # Complete
 
+- (#08) Enable Plymouth
+- (#15) Migrate from sysc-greeter to hyprlock
 - (#30) Xwayland
 - (#24) Cursor
 - (#17) MPD, RMPC, Waybar module
