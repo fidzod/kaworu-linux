@@ -55,6 +55,7 @@ hl.bind(ctrl .. " + SPACE ", hl.dsp.exec_cmd(launcher))
 hl.bind(mod .. " + Q", hl.dsp.window.close())
 hl.bind(mod .. " + C", hl.dsp.exit())
 hl.bind(mod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind("Print", hl.dsp.exec_cmd("screenshot"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("screenshot-region"))

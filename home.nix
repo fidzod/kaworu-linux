@@ -8,6 +8,7 @@
     ./modules/home/hyprland
     ./modules/home/waybar
     ./modules/home/neovim
+    ./modules/home/music
     ./modules/home/scripts
     ./modules/home/foot.nix
     ./modules/home/bash.nix
@@ -18,6 +19,7 @@
   ];
 
   stylix.targets.waybar.enable = false;
+  # stylix.targets.hyprlock.enable = false;
 
   home.packages = with pkgs; [
     wofi
@@ -25,6 +27,7 @@
     fzf
     ripgrep
     librewolf
+    yt-dlp
 
     # language servers:
     svelte-language-server

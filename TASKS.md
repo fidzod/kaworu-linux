@@ -2,13 +2,17 @@
 
 # Backlog
 
-- (#15) Migrate from sysc-greeter to Hyprlogin
-- (#17) MPD, RMPC, Currently Playing in Bar
+- (#24) Cursor
+- (#15) Migrate from sysc-greeter
 - (#19) Bluetooth
-- (#08) Add Plymouth
+- (#08) Plymouth
     - Branding lives here (as well as greeter, see ~~#10~~ #15)
 - (#23) Power off
-- (#24) Cursor
+- (#25) Hypridle
+- (#26) Fix Neovim:
+    - Pyright broken, lsp format, lsp rename,
+    - Stop using system clipboard
+- (#27) Configure wofi
 
 # In-progress
 
@@ -21,6 +25,8 @@
 
 # Complete
 
+- (#17) MPD, RMPC, Waybar module
+- (#28) Hyprlock
 - (#22) Volume control
 - (#06) Configure Neovim
 - (#21) Fix: Autojump

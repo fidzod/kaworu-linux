@@ -4,6 +4,8 @@ let
   colors = config.lib.stylix.colors;
 in
 {
+  imports = [ ./hyprlock.nix ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = builtins.readFile ./hyprland.lua;

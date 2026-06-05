@@ -6,6 +6,11 @@ local map = function(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
 end
 
+-- Switch tabs with Ctrl+number
+for i = 1, 9 do
+  map('n', '<C-' .. i .. '>', i .. 'gt')
+end
+
 -- frequently used commands
 map("n", "<leader>so", ":update<CR> :source<CR>")
 map("n", "<leader>w", ":write<CR>")

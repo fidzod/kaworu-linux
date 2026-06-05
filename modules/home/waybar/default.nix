@@ -17,6 +17,7 @@ in
         layer = "top";
         position = "top";
         modules-left = [ "hyprland/workspaces" ];
+        modules-center = [ "mpd" ];
         modules-right = [ "pulseaudio" "network" "battery" "clock" ];
 
         "hyprland/workspaces" = {
@@ -31,11 +32,23 @@ in
           };
         };
 
+        "mpd" = {
+          format = "{stateIcon} {artist} - {title}";
+          format-stopped = "";
+          format-disconnected = "";
+          state-icons = {
+            paused = "";
+            playing = "";
+          };
+        };
+
         "pulseaudio" = {
           "format" = "{icon} {volume}%";
           "format-icons" = {
             "default" = ["" ""];
             "default-muted" = "";
+            "headphone" = "󰋋";
+            "headphone-muted" = "󰟎";
           };
         };
 
